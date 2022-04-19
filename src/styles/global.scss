@@ -1,0 +1,15 @@
+@use 'reset';
+@use 'variables';
+* {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+	display: none;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
