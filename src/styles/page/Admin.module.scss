@@ -1,0 +1,23 @@
+@use '../abtracts/mixins' as *;
+@use '../base/reset';
+.admin {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+}
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.mainBox {
+  flex: 1;
+  display: flex;
+}
+.body {
+  flex: 1;
+  height: calc(100vh - var(--header-height) - var(--footer-height));
+  padding: 10px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,23 @@
+.footer {
+  width: 100%;
+  height: var(--footer-height);
+  background-color: var(--color-white);
+  box-shadow: 0 0 2px 1px rgba(207, 207, 207, 0.699);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: black;
+  font-weight: 500;
+  font-size: 0.65rem;
+}
+.teamOfUser {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.copyRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

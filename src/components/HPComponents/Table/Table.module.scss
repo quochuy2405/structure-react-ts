@@ -1,0 +1,67 @@
+@use '../../../styles/abtracts/mixins' as *;
+@use '../../../styles/globalType/global' as *;
+.table {
+  @include paperBlank;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 20px 40px;
+}
+.tableHeader {
+  display: flex;
+  width: 100%;
+  background-color: var(--color-main);
+  line-height: 35px;
+  padding: 0 1px;
+  margin: 10px 0;
+
+  border-radius: 2px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 0 8px 1px rgb(224, 224, 224);
+}
+
+.tableTH {
+  flex: 1;
+  padding-left: 10px;
+  min-width: 100px;
+}
+
+.tableBody {
+  width: 100%;
+  height: 80%;
+  padding: 0 1px;
+  overflow: scroll;
+  box-shadow: 0 0 8px 1px rgb(224, 224, 224);
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 10px;
+}
+.tableTR {
+  display: flex;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  line-height: 35px;
+  padding: 0 10px;
+
+  border-radius: 2px;
+  color: var(--color-text-gray);
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 0 4px 2px rgb(248, 248, 248);
+}
+.tableTR + .tableTR {
+  background-color: rgba(255, 95, 67, 0.858);
+  color: white;
+  margin: 2px 0;
+}
+.tableTD {
+  flex: 1;
+  padding-left: 10px;
+  min-width: 100px;
+  cursor: pointer;
+}

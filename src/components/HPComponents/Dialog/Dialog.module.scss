@@ -1,0 +1,67 @@
+@use '../../../styles/abtracts/mixins' as *;
+@use '../../../styles/globalType/global' as *;
+
+@keyframes close {
+  0% {
+    width: 40vw;
+    height: 40vh;
+  }
+  80% {
+    width: 41vw;
+    height: 41vh;
+  }
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes open {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  80% {
+    width: 41vw;
+    height: 41vh;
+  }
+  100% {
+    width: 40vw;
+    height: 40vh;
+  }
+}
+.dialog {
+  @include paperBlank;
+  width: 40vw;
+  height: 40vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  &.open {
+    animation-name: open;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+  }
+  &.close {
+    animation-name: close;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    box-shadow: none;
+  }
+}
+
+.overLay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(183, 183, 183, 0.426);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: none;
+  &.open {
+    display: block;
+  }
+}

@@ -1,0 +1,6 @@
+@use '../../styles/globalType/global' as *;
+.testType {
+  @include paperBlank;
+  width: 200px;
+  height: 200px;
+}

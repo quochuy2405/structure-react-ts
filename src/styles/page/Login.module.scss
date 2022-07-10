@@ -1,0 +1,47 @@
+@use '../globalType/global' as *;
+.login {
+  @include paperBlank;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 80vh;
+  display: flex;
+}
+.loginForm {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  margin: auto 0;
+}
+.imgLogin {
+  flex: 1;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.inputForm {
+  padding-top: 50px;
+  width: 70%;
+}
+.inputControll {
+  width: 100%;
+  border: 2px solid var(--color-main-80);
+  border-radius: 2px;
+}
+// .logo {
+// }
+.boxInput {
+  & p {
+    padding: 5px 0;
+    opacity: 0.6;
+  }
+}
+.boxInput + .boxInput {
+  margin: 10px 0;
+}

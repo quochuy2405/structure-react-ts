@@ -1,15 +1,16 @@
-@use 'reset';
-@use 'variables';
+@use './base/reset';
+@use './abtracts/variables';
 * {
-	-ms-overflow-style: none;
-	scrollbar-width: none;
-	scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
 }
 
 *::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 a {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
